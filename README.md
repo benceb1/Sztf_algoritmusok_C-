@@ -1,1 +1,1 @@
-# Sztf_algoritmusok_C-
+# Sztf_algoritmusok_C-sharp
