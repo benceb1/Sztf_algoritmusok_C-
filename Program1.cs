@@ -1443,5 +1443,30 @@ return van;
                 Gyorsrendezes(ref t, idx + 1, jobb);
             }
         }
+        
+        
+        
+        //penzkifizetes
+        public int[] c = { 5, 10, 20, 50, 100, 200, 500, 1000, 2000, 5000, 10000, 20000 };
+
+        public int[] kifizet(int x, int[] c, int n)
+        {
+            int[] db = new int[n];
+            for (int i = 0; i < n; i++)
+            {
+                db[i] = 0;
+            }
+            int j = n - 1;
+            while (x > 0)
+            {
+                while (c[j] > x)
+                {
+                    j -= 1;
+                }
+                db[j] = db[j] + 1;
+                x -= c[j];
+            }
+            return db;
+        }
     }
 }
