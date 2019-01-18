@@ -466,7 +466,7 @@ namespace beugro
             int ertek = 0;
             for (int i = 0; i < n; i++)
             {
-                ertek = f(t[i]);
+                ertek += f(t[i]);
             }
             return ertek;
         }
